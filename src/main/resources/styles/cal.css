@@ -1,0 +1,66 @@
+/* Estilos generales para los botones */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #3a3a3e, #2e2b2f); /* Degradado para dar más profundidad */
+    -fx-background-radius: 20;
+    -fx-text-fill: #f2f2f3;
+    -fx-border-color: #494444;
+    -fx-border-radius: 15;
+    -fx-padding: 10 10 10 10;
+    -fx-font-size: 16px; /* Tamaño de fuente más grande */
+    -fx-font-family: "Arial", sans-serif; /* Fuente más legible */
+    -fx-cursor: hand; /* Cambiar el cursor al pasar sobre el botón */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 5, 0.3, 0, 0); /* Sombra suave para dar relieve */
+    -fx-transition: 0.3s ease-in-out; /* Animación suave para los cambios */
+}
+
+/* Efecto hover para los botones */
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #4a494d, #3a3a3e); /* Cambia el color en hover */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 8, 0.4, 0, 0); /* Mayor sombra en hover */
+    -fx-scale-x: 1.05; /* Aumenta ligeramente el tamaño */
+    -fx-scale-y: 1.05;
+}
+
+/* Estilos específicos para el botón de limpiar "CE" */
+#font-button {
+    -fx-font: bold italic 20pt "Monospaced";
+    -fx-effect: dropshadow(one-pass-box, #1e1b1b, 8, 0.0, 2, 0);
+    -fx-background-color: linear-gradient(to bottom, #ff5e5e, #e62e2e); /* Color rojo para resaltar */
+    -fx-text-fill: #ffffff; /* Texto blanco */
+    -fx-background-radius: 25; /* Bordes más redondeados */
+    -fx-padding: 12 15 12 15; /* Más espacio alrededor del texto */
+    -fx-border-color: #ff7a7a; /* Borde acorde al color de fondo */
+}
+
+/* Efecto hover para el botón "CE" */
+#font-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #ff7a7a, #ff5e5e); /* Cambia a un tono más claro al pasar el ratón */
+    -fx-effect: dropshadow(gaussian, rgba(255, 0, 0, 0.7), 8, 0.5, 0, 0); /* Mayor sombra en hover */
+}
+
+/* Estilo para la pantalla de la calculadora */
+.text-field {
+    -fx-background-color: #1e1b1f; /* Fondo oscuro */
+    -fx-text-fill: #ffffff; /* Texto blanco */
+    -fx-font-size: 24px; /* Tamaño grande para los números */
+    -fx-font-family: "Consolas", monospace; /* Fuente de ancho fijo para mejor alineación */
+    -fx-padding: 15 10 15 10; /* Espaciado interno */
+    -fx-border-color: #494444;
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-alignment: center-right; /* Alinear el texto a la derecha */
+}
+
+/* Sombra para toda la ventana de la calculadora */
+.vbox {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 10, 0.5, 0, 0);
+}
+
+/* Efecto de animación al pulsar los botones */
+.button:pressed {
+    -fx-background-color: #2e2b2f; /* Color más oscuro al ser presionado */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 4, 0.2, 0, 0);
+    -fx-scale-x: 0.98; /* Ligeramente más pequeño al hacer clic */
+    -fx-scale-y: 0.98;
+}
