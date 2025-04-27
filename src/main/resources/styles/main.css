@@ -1,0 +1,26 @@
+.root {
+    /* Asigna una imagen local, si quieres mantener solo el GIF, puedes eliminar esta línea */
+    -fx-background-image: url("../images/py.jpg"), url("https://openseauserdata.com/files/ac0fcf64393cd4b76061bab2bb9f75d3.gif");
+
+    /* Configura el tamaño para que la primera imagen cubra toda la pantalla, y el GIF tenga tamaño específico */
+    -fx-background-size: cover, 200px;
+
+    /* Ubica la primera imagen al centro, y el GIF en la esquina inferior derecha */
+    -fx-background-position: center, bottom right;
+
+    /* Evita la repetición de ambas imágenes */
+    -fx-background-repeat: no-repeat;
+}
+
+
+
+/*
+.root{
+    -fx-background-image: url(""), url("https://openseauserdata.com/files/ac0fcf64393cd4b76061bab2bb9f75d3.gif");
+    -fx-background-size: 100%,200px;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center,bottom right;
+
+}
+

@@ -1,0 +1,183 @@
+/* Estilos generales */
+.root {
+    -fx-font-family: 'Arial';
+    -fx-base: #2C3E50;
+    -fx-background: #34495E;
+}
+
+/* Estilo para los botones principales */
+.button {
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-padding: 10 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 1);
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s;
+}
+
+.button:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 2);
+}
+
+/* Botones específicos por color */
+#beginnerBtn {
+    -fx-background-color: #2ECC71;
+}
+
+#beginnerBtn:hover {
+    -fx-background-color: derive(#2ECC71, 20%);
+}
+
+#advancedBtn {
+    -fx-background-color: #F39C12;
+}
+
+#advancedBtn:hover {
+    -fx-background-color: derive(#F39C12, 20%);
+}
+
+#expertBtn {
+    -fx-background-color: #E74C3C;
+}
+
+#expertBtn:hover {
+    -fx-background-color: derive(#E74C3C, 20%);
+}
+
+#startBtn {
+    -fx-background-color: #3498DB;
+}
+
+#startBtn:hover {
+    -fx-background-color: derive(#3498DB, 20%);
+}
+
+#exitBtn {
+    -fx-background-color: #9B59B6;
+}
+
+#exitBtn:hover {
+    -fx-background-color: derive(#9B59B6, 20%);
+}
+
+/* Estilo para los campos de texto */
+.text-field {
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2C3E50;
+    -fx-background-color: #ECF0F1;
+    -fx-border-color: #BDC3C7;
+    -fx-border-radius: 3;
+    -fx-padding: 5 10;
+    -fx-alignment: center;
+}
+
+.text-field:disabled {
+    -fx-opacity: 1.0;
+    -fx-background-color: #ECF0F1;
+}
+
+/* Estilo para las etiquetas */
+.label {
+    -fx-text-fill: #ECF0F1;
+    -fx-font-weight: bold;
+}
+
+.title-label {
+    -fx-font-size: 24;
+    -fx-text-fill: #F1C40F;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 0,0,2,2);
+}
+
+/* Estilo para el tablero del rompecabezas */
+.puzzle-tile {
+    -fx-background-radius: 3;
+    -fx-border-radius: 3;
+    -fx-border-color: #2C3E50;
+    -fx-border-width: 1;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.1), 2, 2, 1, 0);
+}
+
+.puzzle-tile:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(46,204,113,0.5), 5, 0.5, 0, 0);
+}
+
+.selected-tile {
+    -fx-effect: dropshadow(three-pass-box, #2ECC71, 10, 0.5, 0, 0);
+}
+
+/* Estilo para el panel de estadísticas */
+.stats-panel {
+    -fx-background-color: #2C3E50;
+    -fx-border-color: #34495E;
+    -fx-border-width: 2 0 0 0;
+    -fx-padding: 15;
+    -fx-spacing: 15;
+}
+
+.stats-counter {
+    -fx-background-color: #34495E;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-color: #7F8C8D;
+    -fx-border-radius: 3;
+}
+
+.stats-label {
+    -fx-text-fill: #BDC3C7;
+    -fx-font-size: 12;
+}
+
+/* Estilo para la ventana de finalización */
+.completion-dialog {
+    -fx-background-color: #2C3E50;
+    -fx-padding: 30;
+    -fx-spacing: 20;
+    -fx-alignment: center;
+}
+
+.completion-title {
+    -fx-text-fill: #F1C40F;
+    -fx-font-size: 24;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 0,0,2,2);
+}
+
+.completion-stats {
+    -fx-text-fill: white;
+    -fx-font-size: 16;
+    -fx-alignment: center;
+}
+
+/* Efecto de animación para el título */
+@keyframes pulse {
+    0% { -fx-scale-x: 1; -fx-scale-y: 1; }
+    50% { -fx-scale-x: 1.05; -fx-scale-y: 1.05; }
+    100% { -fx-scale-x: 1; -fx-scale-y: 1; }
+}
+
+.animated-title {
+    -fx-animation: pulse 2s infinite;
+}
+
+/* Estilo para los separadores */
+.separator {
+    -fx-fill: #34495E;
+    -fx-stroke: #34495E;
+    -fx-stroke-width: 2;
+}
+
+/* Estilo para los tooltips */
+.tooltip {
+    -fx-background-color: #2C3E50;
+    -fx-text-fill: white;
+    -fx-font-size: 12;
+    -fx-border-color: #34495E;
+    -fx-border-width: 1;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+    -fx-padding: 5 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 5, 0, 0, 2);
+}
